@@ -1,7 +1,8 @@
 FROM nginx:alpine
 
 # Copy the HTML and CSS files to the Nginx HTML directory
-COPY . /usr/share/nginx/html
+COPY color.html /usr/share/nginx/html
+COPY color.css /usr/share/nginx/html
 
 # Expose port 8081 (the port Nginx will listen on)
 EXPOSE 8081
