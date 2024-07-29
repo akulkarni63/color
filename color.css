@@ -1,4 +1,18 @@
+/* sam.css */
+
 body {
-   background: linear-gradient(#FFFFFF, #0000FF);
-   height: 100vh;
+    background: linear-gradient(#FFFFFF, #0000FF); /* Gradient from white to blue */
+    color: #000000; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+h1 {
+    font-size: 2em; /* Font size for headings */
+    text-align: center; /* Center align the text */
 }
