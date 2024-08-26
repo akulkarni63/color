@@ -7,6 +7,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/akulkarni63/color.git'
             }
         }
+        
+        stage('Verify Docker') {
+            steps {
+                sh 'docker --version'
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 script {
@@ -14,6 +21,7 @@ pipeline {
                 }
             }
         }
+        
         stage('Deploy') {
             steps {
                 script {
